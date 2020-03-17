@@ -35,21 +35,15 @@ class _QuizPageState extends State<QuizPage> {
     bool correctAnswer = quizBrain.getCorrentAnswer();
 
     setState(() {
-    if (userPickedAnswer == correctAnswer) {
-      scoreKeeper.add(
-        Icon(
-            Icons.check,
-            color: Colors.green
-        ),
-      );
-    } else {
-      scoreKeeper.add(
-        Icon(
-            Icons.close,
-            color: Colors.red
-        ),
-      );
-    }
+      if (userPickedAnswer == correctAnswer) {
+        scoreKeeper.add(
+          Icon(Icons.check, color: Colors.green),
+        );
+      } else {
+        scoreKeeper.add(
+          Icon(Icons.close, color: Colors.red),
+        );
+      }
       quizBrain.nextQuestion();
     });
   }
@@ -105,7 +99,11 @@ class _QuizPageState extends State<QuizPage> {
               ),
               onPressed: () {
                 //The user picked true.
-                Alert(context: context, title: "CORRETO!", desc: "A sua resposta está correta.").show();
+                Alert(
+                        context: context,
+                        title: "CORRETO!",
+                        desc: "A sua resposta está correta.")
+                    .show();
                 checkAnswer(true);
               },
             ),
