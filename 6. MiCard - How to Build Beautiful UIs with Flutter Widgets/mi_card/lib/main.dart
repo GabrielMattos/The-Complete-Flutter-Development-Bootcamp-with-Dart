@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -17,8 +16,7 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               CircleAvatar(
                 radius: 50.0,
-                backgroundImage: AssetImage('images/imagem.jpg'),
-                backgroundColor: Colors.blue,
+                backgroundImage: AssetImage('images/avatar.jpg'),
               ),
               Text(
                 'Gabriel Mattos',
@@ -26,13 +24,11 @@ class MyApp extends StatelessWidget {
                   fontSize: 40.0,
                   color: Colors.white,
                   fontWeight: FontWeight.bold,
-                  fontFamily: 'Pacifico',
                 ),
               ),
               Text(
                 'FLUTTER DEVELOPER',
                 style: TextStyle(
-                  fontFamily: 'Source Sans Pro',
                   color: Colors.teal.shade100,
                   fontSize: 20.0,
                   letterSpacing: 2.5,
@@ -47,7 +43,6 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
@@ -55,16 +50,15 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    '+55 21 9 9512-1268',
+                    '+55 21 9 9999 9999',
                     style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro'),
+                      color: Colors.teal.shade900,
+                      fontSize: 20.0,
+                    ),
                   ),
                 ),
               ),
               Card(
-                color: Colors.white,
                 margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
                 child: ListTile(
                   leading: Icon(
@@ -72,14 +66,14 @@ class MyApp extends StatelessWidget {
                     color: Colors.teal,
                   ),
                   title: Text(
-                    'gabriel@hotmail.com',
+                    'gabriel@gmail.com',
                     style: TextStyle(
-                        fontSize: 20.0,
-                        color: Colors.teal.shade900,
-                        fontFamily: 'Source Sans Pro'),
+                      color: Colors.teal.shade900,
+                      fontSize: 20.0,
+                    ),
                   ),
                 ),
-              ),
+              )
             ],
           ),
         ),
